@@ -1,0 +1,276 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="images/site.ico" mce_href="images/site.ico" type="image/x-icon">
+<title>墨非科技</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="css/index.css" rel='stylesheet' type='text/css' />
+<link href="css/slippry/slippry.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="css/skymoons.css" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Google Fonts -->
+
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script type="text/javascript" src="js/slippry.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+<script type="text/javascript">
+$(function () {
+	
+	var filterList = {
+	
+		init: function () {
+		
+			// MixItUp plugin
+			// http://mixitup.io
+			$('#portfoliolist').mixitup({
+				targetSelector: '.portfolio',
+				filterSelector: '.filter',
+				effects: ['fade'],
+				easing: 'snap',
+				// call the hover effect
+				onMixEnd: filterList.hoverEffect()
+			});				
+		
+		},
+		
+		hoverEffect: function () {
+		
+			// Simple parallax effect
+			$('#portfoliolist .portfolio').hover(
+				function () {
+					$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+					$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+				},
+				function () {
+					$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+					$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+				}		
+			);				
+		
+		}
+
+	};
+	
+	// Run the show!
+	filterList.init();
+	
+	
+});	
+</script>
+</head>
+<body>
+<!-- Header Starts Here -->
+<div class="header">
+	<div class="container">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo2.png" alt=""></a>
+		</div>
+		<span class="menu"></span>
+		<div class="navigation">
+			<ul class="navig cl-effect-3" >
+				<li><a href="index.html">首页</a></li>
+				<li><a href="games.html">产品中心</a></li>
+				<li><a href="blog.html">新闻动态</a></li>
+				<li><a href="aboutUs.html">关于我们</a></li>
+				<li><a href="contact.html">联系我们</a></li>
+			</ul>
+			<div class="clearfix"></div>
+			<script>
+				$( "span.menu" ).click(function() {
+				  $( ".navigation" ).slideToggle( "slow", function() {
+				    // Animation complete.
+				  });
+				});
+			</script>
+
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<div class="banner">
+ <div class="b-img">
+	 <a href="#" style="background:url(images/banner/banner2.jpg) center no-repeat;"></a>
+	 <a href="#" style="background:url(images/banner/banner3.jpg) center no-repeat;"></a>
+	 <a href="#" style="background:url(images/banner/banner4.jpg) center no-repeat;"></a>
+ </div>
+  <div class="b-list"></div>
+  <a class="bar-left" href="#"><em></em></a><a class="bar-right" href="#"><em></em></a> 
+</div>
+<!-- Header Ends Here -->	
+<div class="banner-bot">
+	<div class="container news-box ">
+		<div class="news-box-list">
+			<!-- left-banner -->
+			<div class="new-banner"  id="newsList">
+				<!--小圆点-->
+				<div class="ol-nav"></div>
+					<!--左边-->
+					<div class="new-index">
+						<div class="banner-description active"> <i></i> <b>1</b>
+							<dl>
+								<dt>公司动态</dt>
+								<dd>Company news</dd>
+							</dl>
+						</div>
+						<div class="banner-description "> <i></i> <b>2</b>
+							<dl>
+								<dt>公司动态</dt>
+								<dd>Company news</dd>
+							</dl>
+						</div>
+						<div class="banner-description "> <i></i> <b>3</b>
+							<dl>
+								<dt>公司动态</dt>
+								<dd>Company news</dd>
+							</dl>
+						</div>
+						<div class="banner-description "> <i></i> <b>4</b>
+							<dl>
+								<dt>公司动态</dt>
+								<dd>Company news</dd>
+							</dl>
+						</div>
+					</div>
+					<!--图片-->
+					<div class="new-total">
+						<div class="news-img-box">
+							<div class="news-img">
+								<div class="banner-img-model">
+									<div>
+										<h4>《太极风云决》手游震撼来袭</h4>
+										<p>国民级2D手游</p>
+									</div>
+								</div>
+								<img src="images/fyj.jpg" alt="《太极风云决》手游震撼来袭" />
+							</div>
+							<div class="news-img">
+								<div class="banner-img-model">
+									<div>
+										<h4>《太极崛起》中秋活动</h4>
+										<p>超级奖励等你拿</p>
+									</div>
+								</div>
+								<img src="images/vid-img.jpg" alt="《太极崛起》中秋活动" />
+							</div>
+							<div class="news-img">
+								<div class="banner-img-model">
+									<div>
+										<h4>《太极风云决》手游震撼来袭</h4>
+										<p>国民级2D手游</p>
+									</div>
+								</div>
+								<img src="images/fyj2.jpg" alt="《太极风云决》手游震撼来袭" />
+							</div>
+							<div class="news-img">
+								<div class="banner-img-model">
+									<div>
+										<h4>《太极崛起》中秋活动</h4>
+										<p>超级奖励等你拿</p>
+									</div>
+								</div>
+								<img src="images/vid-img.jpg" alt="《太极崛起》中秋活动" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /left-banner -->
+			<!-- news list -->
+			<div class="new-list">
+				<div class="new-more">
+					<a href="blog.html"><i></i></a>
+				</div>
+				<div class="news-top text-left">
+					<h3>
+						<a href="#">【太极风云诀】无极1服07月04日10点 震撼开启</a>
+					</h3>
+					<p>
+						<a href="#">手游-安卓-不删档不限号首测。</a>
+					</p>
+				</div>
+				<ul>
+					<li>
+						<a href="#" title="天停服公告">
+							<span>停服公告”</span> <em>04-11</em>
+						</a>
+					</li>
+					<li>
+						<a href="#" title="018年8月3日18:00维护更新公告">
+							<span>018年8月3日18:00维护更新公告</span> <em>03-02</em>
+						</a>
+					</li>
+					<li>
+						<a href="#" title="【太极风云诀】无极2服07月05日10点 震撼开启">
+							<span>【太极风云诀】无极2服07月05日10点 震撼开启</span> <em>02-12</em>
+						</a>
+					</li>
+					<li>
+						<a href="#" title="内部爆料：新服即将开启！！！">
+							<span>内部爆料：新服即将开启！！！</span> <em>01-16</em>
+						</a>
+					</li>
+				</ul>
+			</div>
+	</div>
+</div>
+<!-- Gallery Starts Here -->
+
+<!-- Gallery Ends Here -->
+<!-- Video Part starts Here -->
+
+<!-- Video Part Ends Here -->
+<!-- What New Part starts Here -->
+<div class="what-new">
+	<div class="container" style="width:100%">
+		<h3>合作伙伴</h3>
+		<div class="artner">
+			<ul>
+				<li><a href="#"><img src="images/artner/37.png"></a></li>
+				<li><a href="#"><img src="images/artner/49you.png"></a></li>
+				<li><a href="#"><img src="images/artner/tencent.png"></a></li>
+				<li><a href="#"><img src="images/artner/douyu.png"></a></li>
+				<li><a href="#"><img src="images/artner/g2.png"></a></li>
+				<li><a href="#"><img src="images/artner/panda.jpg"></a></li>
+				<li><a href="#"><img src="images/artner/sogou.png"></a></li>
+				<li><a href="#"><img src="images/artner/swjoy.png"></a></li>
+				<li><a href="#"><img src="images/artner/7477.png"></a></li>
+				<li><a href="#"><img src="images/artner/xunlei.jpg"></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- What New Part Endss Here -->
+<!-- Footer Starts Here -->
+<div class="footer">
+	<div class="footerMain">
+		<div class="wechat" >
+			<img src="images/logo3.png" style="width:150px;height:94px;margin-top:25px;">
+			<p style="margin-top:6px;">成都墨非科技有限公司,2016-12-30</p>
+			<p style="margin-top:7px;">make by MorfirTech 2018-9-20</p>
+		</div>
+		<div class="wechat">
+			<img src="images/wechat.gif" style="width:150px;height:150px;">
+			<p>关注成都墨非微信公众号</p>
+		</div>
+	</div>
+</div>
+<!-- Footer Ends Here -->
+</body>
+<script type="text/javascript" src="js/banner.js"></script>
+<script type="text/javascript" src="js/index.min.js"></script>
+</html>

@@ -1,0 +1,224 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Gamez Bootstarp Website Template | Features :: w3layouts</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.8.2.js"></script>
+<script src="js/jquery-ui-1.10.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="css/stylesheet" href="css/jquery.fullPage.css">
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!-- Header Starts Here -->
+<canvas id="canvas" style="position:fixed;width:100%;height:100%"></canvas>
+<div class="section" style="position: relative;">
+	<div class="header" >
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt=""></a>
+			</div>
+			<span class="menu"></span>
+			<div class="navigation">
+				<ul class="navig cl-effect-3" >
+					<li><a href="index.html">首页</a></li>
+					<li><a href="games.html">产品中心</a></li>
+					<li><a href="blog.html">新闻动态</a></li>
+					<li><a href="features.html">关于我们</a></li>
+					<li><a href="contact.html">联系我们</a></li>
+				</ul>
+				<script>
+					$( "span.menu" ).click(function() {
+					  $( ".navigation" ).slideToggle( "slow", function() {
+						// Animation complete.
+					  });
+					});
+				</script>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- Header Ends Here -->
+	<!-- Games Page Starts here -->
+	<div class="games">
+		<div class="who" style="display:none">
+			WHO WE ARE?
+		</div>
+		<div class="aboutUs" style="display:none;">
+				研发、销售计算机软硬件及电子产品；计算机网络技术服务、技术开发、技术推广、技术转让；计算机系统集成；基础软件服务；应用软件服务；技术进出口；家具、家用电器租赁。（依法须经批准的项目，经相关部门批准后方可开展经营活动）。
+		</div>
+		<div class="next">
+			<img src="images/next.png" style="display:none">
+		</div>
+	</div>
+</div>
+<div class="section" style="position: relative;">
+<h3>第二屏</h3>
+<p>请查看右边的圆圈</p>
+</div>
+<div class="section" style="position: relative;">
+<h3>第三屏</h3>
+<p>圆圈还可以设置位置，颜色，加上 tip，点击可以控制</p>
+</div>
+<div class="section" style="position: relative;">
+<h3>第四屏</h3>
+<p>这是最后一屏</p>
+</div>
+<!-- Footer Ends Here -->
+</body>
+<script>
+	$(".who").fadeIn(2000);
+	$(".next").children().fadeIn(2000);
+	$(".next").children().fadeOut(2000);
+	function showImg(){
+		$(".next").children().fadeIn(2000);
+		$(".next").children().fadeOut(2000);
+	}
+	setInterval("showImg()","1000")
+	
+	
+	$(document).mousewheel(function(event, delta) {
+        var dir = delta > 0 ? 'Up' : 'Down';
+        if (dir == 'Up') {
+           // alert('向上滚动');
+        } else {
+			//$('body,html').animate({scrollTop:130});
+			$(".aboutUs").fadeIn(1000);
+        }
+
+    });
+	
+	$(document).ready(function() {
+
+	$.fn.fullpage({
+
+		//slidesColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+
+		anchors: ['page1', 'page2', 'page3', 'page4'],
+
+		navigation: true
+
+	});
+
+});
+
+
+</script>
+<script>
+"use strict";
+
+var canvas = document.getElementById('canvas'),
+  ctx = canvas.getContext('2d'),
+  w = canvas.width = window.innerWidth,
+  h = canvas.height = window.innerHeight,
+
+  hue = 217,
+  stars = [],
+  count = 0,
+  maxStars = 1200;
+
+var canvas2 = document.createElement('canvas'),
+  ctx2 = canvas2.getContext('2d');
+canvas2.width = 100;
+canvas2.height = 100;
+var half = canvas2.width / 2,
+  gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
+gradient2.addColorStop(0.025, '#fff');
+gradient2.addColorStop(0.1, 'hsl(' + hue + ', 61%, 33%)');
+gradient2.addColorStop(0.25, 'hsl(' + hue + ', 64%, 6%)');
+gradient2.addColorStop(1, 'transparent');
+
+ctx2.fillStyle = gradient2;
+ctx2.beginPath();
+ctx2.arc(half, half, half, 0, Math.PI * 2);
+ctx2.fill();
+
+// End cache
+
+function random(min, max) {
+  if (arguments.length < 2) {
+    max = min;
+    min = 0;
+  }
+
+  if (min > max) {
+    var hold = max;
+    max = min;
+    min = hold;
+  }
+
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function maxOrbit(x, y) {
+  var max = Math.max(x, y),
+    diameter = Math.round(Math.sqrt(max * max + max * max));
+  return diameter / 2;
+}
+
+var Star = function() {
+
+  this.orbitRadius = random(maxOrbit(w, h));
+  this.radius = random(60, this.orbitRadius) / 12;
+  this.orbitX = w / 2;
+  this.orbitY = h / 2;
+  this.timePassed = random(0, maxStars);
+  this.speed = random(this.orbitRadius) / 900000;
+  this.alpha = random(2, 10) / 10;
+
+  count++;
+  stars[count] = this;
+}
+
+Star.prototype.draw = function() {
+  var x = Math.sin(this.timePassed) * this.orbitRadius + this.orbitX,
+    y = Math.cos(this.timePassed) * this.orbitRadius + this.orbitY,
+    twinkle = random(10);
+
+  if (twinkle === 1 && this.alpha > 0) {
+    this.alpha -= 0.05;
+  } else if (twinkle === 2 && this.alpha < 1) {
+    this.alpha += 0.05;
+  }
+
+  ctx.globalAlpha = this.alpha;
+  ctx.drawImage(canvas2, x - this.radius / 2, y - this.radius / 2, this.radius, this.radius);
+  this.timePassed += this.speed;
+}
+
+for (var i = 0; i < maxStars; i++) {
+  new Star();
+}
+
+function animation() {
+  ctx.globalCompositeOperation = 'source-over';
+  ctx.globalAlpha = 0.8;
+  ctx.fillStyle = 'hsla(' + hue + ', 64%, 6%, 1)';
+  ctx.fillRect(0, 0, w, h)
+
+  ctx.globalCompositeOperation = 'lighter';
+  for (var i = 1, l = stars.length; i < l; i++) {
+    stars[i].draw();
+  };
+
+  window.requestAnimationFrame(animation);
+}
+
+animation();
+</script>
+</html>

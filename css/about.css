@@ -1,0 +1,68 @@
+* { margin: 0; padding: 0;}
+.clear{ clear:both;}
+.warp{ width:1100px; margin:0 auto;}
+body { font: 14px/1.6 "Microsoft Yahei";}
+.inner { position: relative; width: 1100px; margin: 0 auto;}
+.pagescroll-hd { position: fixed; z-index: 1000; width: 100%; height: 64px; background: url(../images/hd_bg.jpg) 0 0 repeat-x;}
+.pagescroll-hd h1 { float: left; width: 156px; height: 26px; margin-top: 20px;}
+.pagescroll-hd h1 a { display: block; width: 3300px; height: 126px; text-indent: -9999px; background-image: url(../images/logo3.png);}
+.pagescroll-hd .nav { float: right; list-style-type: none;}
+.pagescroll-hd .nav li { float: left; margin-left: 5px;}
+.pagescroll-hd .nav a { float: left; padding: 0 10px; line-height: 64px; color: #fff; text-decoration: none;}
+.pagescroll-hd .nav a:hover { height: 62px; border-bottom: 2px solid #4cb803;}
+
+#pagescroll { }
+#pagescroll .section { }
+#pagescroll .inner { width: 1100px; height: 100%;}
+#pagescroll .section0 {background-image: none;}
+#pagescroll .section0 .fp-tableCell { vertical-align: top;}
+#pagescroll .section0 .war { height: 100%;overflow: hidden; text-align:center;vertical-align:center}
+#pagescroll .section0 .war img{width:26px;height:62px;margin-top:-40px;}
+#pagescroll .section0 .right_box{right:0;margin:20em auto}
+#pagescroll .section0 .right_box span{ font-size:110px; color:white;}
+
+#pagescroll .section { }
+#pagescroll .inner { width: 1100px; height: 100%;}
+#pagescroll .section1 {background-image: none;}
+#pagescroll .section1 .fp-tableCell { vertical-align: top;}
+#pagescroll .section1 .war { height: 100%;overflow: hidden; }
+#pagescroll .section1 .left_box{ width:488px; height:488px;position:absolute; top:50%; margin-top:-244px; left:0;}
+#pagescroll .section1 .right_box{position:absolute; top:50%; margin-top:-244px; right:0;width:540px;}
+#pagescroll .section1 .right_box h4{ line-height:30px; color:white}
+#pagescroll .section1 .right_box h1{ font-size:72px; color:white;}
+
+#pagescroll .section2 {background-image: none;}
+#pagescroll .section2 .fp-tableCell { vertical-align: top;}
+#pagescroll .section2 .war { height: 100%;overflow: hidden;}
+#pagescroll .section2 .left_box{ width:500px; height:300px;position:absolute; top:50%; margin-top:-150px; right:20px; overflow:hidden; 
+  box-shadow: 15px 15px 10px #989898; border:1px solid white;opacity:0;
+
+}
+#pagescroll .section2 .right_box{position:absolute; top:50%; margin-top:-150px; left:0;width:540px;opacity:0;}
+#pagescroll .section2 .right_box h4{ line-height:30px; color:white;}
+#pagescroll .section2 .right_box h1{ font-size:72px; color:white; }
+a.buttom{ display:block; width:130px; height:40px; line-height:40px; text-align:center; background:#f7941d; font-family:"Î¢ÈíÑÅºÚ"; font-size:18px; color:white; outline-style:none; border-radius:6px; margin:20px 0; }
+
+
+#pagescroll .section3 { background-image: none;}
+#pagescroll .section3 .fp-tableCell { vertical-align: top;}
+#pagescroll .section3 .war { height: 100%;overflow: hidden;}
+#pagescroll .section3 .left_box{ width:500px; height:300px;position:absolute; top:50%; margin-top:-150px; left:0px; overflow:hidden; 
+  box-shadow: 15px 15px 10px #989898; border:1px solid white;opacity:0;
+}
+.op{opacity:1;}
+#pagescroll .section3 .right_box{position:absolute; top:50%; margin-top:-150px; right:0;width:540px;opacity:0;
+}
+#pagescroll .section3 .right_box h4{ line-height:30px; color:white}
+#pagescroll .section3 .right_box h1{ font-size:72px; color:white;}
+a.buttom{ display:block; width:130px; height:40px; line-height:40px; text-align:center; background:#f7941d; font-family:"Î¢ÈíÑÅºÚ"; font-size:18px; color:#white; outline-style:none; border-radius:6px; margin:20px 0;}
+
+
+#pagescroll .section4 h2 { width: 577px; height: 90px; margin: 0 auto; text-indent: -9999px; }
+#pagescroll .section4 img { display: block; margin: 2% auto;}
+#pagescroll .section4 .txt { line-height: 30px; text-align: center; color:white}
+#pagescroll .section4 .fp-controlArrow { width: 100px; height: 100px; margin-top: -50px; border: 0 none;}
+#pagescroll .section4 .fp-prev { left: 150px; background: url(../images/left_control.png) 50% no-repeat;}
+#pagescroll .section4 .fp-next { right: 150px; background: url(../images/right_control.png) 50% no-repeat;}
+#pagescroll .section4 .warp h4{ line-height:30px; color:white}
+#pagescroll .section4 .warp h1{ font-size:72px; color:white;}
